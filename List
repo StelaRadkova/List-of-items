@@ -1,0 +1,8 @@
+function addItem() {
+    const content = document.getElementById("newItemText").value;
+    const liEl = document.createElement('li');
+    liEl.textContent = content; 
+    const ulEl = document.getElementById("items");
+    ulEl.appendChild(liEl);
+    document.getElementById("newItemText").value = "";
+}
